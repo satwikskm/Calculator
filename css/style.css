@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=League+Spartan:wght@300;500;700&family=Roboto:wght@300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+
+    --Dark-violet: hsl(281, 89%, 26%);
+    --Vivid-magenta: hsl(285, 91%, 52%);
+
+    --Pure-cyan : hsl(176, 100%, 44%);
+    --Soft-cyan : hsl(177, 92%, 70%);
+
+    --Very-dark-violet: hsl(268, 47%, 21%);
+    --Dark-magenta : hsl(290, 70%, 36%);
+
+
+    --Light-yellow: hsl(52, 100%, 62%);
+    --Very-dark-blue: hsl(198, 20%, 13%);
+    --White: hsl(0, 0, 100%);
+
+    --Very-dark-desaturated-blue-main : hsl(222, 26%, 31%);
+    --Very-dark-desaturated-blue-toggle : hsl(223, 31%, 20%);
+    --Very-dark-desaturated-blue-bg : hsl(224, 36%, 15%);
+}
+
+body{
+    background:var(--Very-dark-desaturated-blue-main);
+    color: aliceblue;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+.main-container{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    transform: translate(400px,200px);
+    
+}
+
+.container-1{
+    display: flex;
+    justify-content: space-between;
+}
+/* 
+.toggle{
+    background: var(--Very-dark-blue);
+    border-radius: 30%;
+} */
+
+.container-2{
+    background: var(--Very-dark-blue);
+    height:10vh;
+    display: flex;
+    border-radius: 10px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+
+}
+
+.calculator-buttons{
+    width: 80%;
+    background: var(--Very-dark-desaturated-blue-bg);
+    display: grid;
+    grid-template-columns: 55px 55px 55px 55px;
+    column-gap: 20px;
+    row-gap: 30px;
+    align-self: center;
+    justify-content: center;
+    padding: 30px 5px;
+    margin-left: 55px;
+    border-radius: 10px;
+}
+
+.last-button{
+    display: grid;
+    grid-template-columns: 130px 130px ;
+    column-gap: 20px;
+    row-gap: 30px;
+
+}
+
+.calculator-buttons button{
+    height: 5vh;
+    font-family: 'League Spartan', sans-serif;
+    box-shadow: 1px 1px  20px 1px black;
+    
+
+}
+
+.toggle-buttons-labels{
+    display: flex;
+    gap:10px;
+}
+.toggle-buttons{
+    display: flex;
+    gap:15px;
+    margin-left: 55px;
+}
+/* 
+.pos-active{
+    display: flex;
+    background: white;
+    height: 3vh;
+    width: 100%;
+} */
+
+.Reset {
+    background: rgb(245, 79, 79);
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.Reset::after {
+    content: " ";
+    height: 5vh;
+    width: 100%;
+    background: white;
+}
